@@ -89,3 +89,10 @@
 .no-js .bb-custom-content {
 	height: 470px;
 }
+
+/* 絵本用 */
+.hehon-text {
+	font-family: "Kokoro";
+	font-size: 1.3em;
+	color: #000;
+}
