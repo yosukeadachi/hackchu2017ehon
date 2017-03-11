@@ -30,7 +30,7 @@ header {
   margin: 30px;
   text-align: center;
 }
-a{
+a {
   display: block;
   &:hover {
     text-decoration: none;
@@ -96,6 +96,7 @@ ul {
         border-radius: $round;
       }
       img {
+        border-radius: $round;
         width: 100%;
         height: 100%;
       }
