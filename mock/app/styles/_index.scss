@@ -1,3 +1,10 @@
+$base-color: #555;
+
+
+*{
+  margin:0;
+  padding:0;
+}
 header {
   background: #dfdfdf;
   width: 100%;
@@ -8,7 +15,8 @@ header {
  } 
 }
 .container {
-  margin: 20px;
+  width: 90%;
+  margin: 0 auto;
 }
 .indexTitle {
 }
@@ -35,6 +43,17 @@ a{
   }
   
 }
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 //read
 ul {
   li {
@@ -43,9 +62,29 @@ ul {
   }
 }
 .list {
+  margin: 0;
   ul {
+    overflow: hidden;
+    width: 100%;
     li {
-    
+      float: left;
+      display: inline-block;
+      width: 50%;
+      box-sizing: border-box;
+      padding-bottom: 5px;
+      padding: 15px;
+      .img {
+        border: solid 1px $base-color;
+        border-radius: 6px;
+      }
+      img {
+        width: 100%;
+      }
+      p {
+        line-height: 1em;
+        width: 95%;
+        margin: 5px auto 0 auto;
+      }
     }
   }
 }
