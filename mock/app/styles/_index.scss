@@ -200,3 +200,26 @@ button, a {
   }
 }
 
+.modal-inner {
+  ul{
+    li {
+      a {
+        color: $base-color;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 30px; 
+      }
+    }
+  }
+}
+.modal-icon {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  a {
+    display: inline-block;
+    padding: 10px;
+    background: $back-color;
+  }
+}
