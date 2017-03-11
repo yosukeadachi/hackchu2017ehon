@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":["window","onload","setTimeout","scrollTo"],"mappings":";;AAAA,CAAC,YAAW;AACVA,SAAOC,MAAP,GAAgB,YAAW;AAAEC,eAAWC,QAAX,EAAqB,GAArB,EAA0B,CAA1B,EAA6B,CAA7B;AAAkC,GAA/D;AACD,CAFD","file":"main.js","sourcesContent":["(function (){\n  window.onload = function() { setTimeout(scrollTo, 100, 0, 1); }\n})();\n"]}
