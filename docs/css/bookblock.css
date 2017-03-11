@@ -77,7 +77,7 @@
 	z-index: 999;
 }
 
-.bb-overlay, 
+.bb-overlay,
 .bb-flipoverlay {
 	background-color: rgba(0, 0, 0, 0.7);
 	position: absolute;
@@ -171,7 +171,7 @@
 }
 
 /* No JS */
-.no-js .bb-bookblock, 
+.no-js .bb-bookblock,
 .no-js ul.bb-custom-grid li {
 	width: auto;
 	height: auto;
@@ -180,4 +180,22 @@
 .no-js .bb-item {
 	display: block;
 	position: relative;
+}
+
+.ehon_nav_left {
+	background-color: rgba(100,0,0,0.2);
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+}
+
+.ehon_nav_right {
+	background-color: rgba(0,100,0,0.2);
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 50%;
+	height: 100%;
 }
