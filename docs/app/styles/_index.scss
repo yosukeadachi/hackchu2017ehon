@@ -81,43 +81,45 @@ ul {
     overflow: hidden;
     width: 90%;
     margin: 0 auto;
-    li {
-      float: left;
-      display: inline-block;
-      width: 50%;
-      box-sizing: border-box;
-      padding-bottom: 5px;
-      padding: 10px;
-      .img {
-        border: solid 1px $base-color;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        border-radius: $round;
-      }
-      img {
-        border-radius: $round;
-        width: 100%;
-        height: 100%;
-      }
-      p {
-        line-height: 1em;
-        width: 95%;
-        margin: 10px auto 0 auto;
-      }
-      .button {
-        position: relative;
-        top: -35px;
-        z-index: 99;
-        .editButton {
-          border: 1px solid $btn-border-color;
-          background: $back-color;
-          font-size: $size-button-small;
-          width: 90%;
-          padding: 5px;
-          border-radius: 4px;
-          margin: 0 auto 0 auto;
-          display: block;
+    a{
+      li {
+        float: left;
+        display: inline-block;
+        width: 50%;
+        box-sizing: border-box;
+        padding-bottom: 5px;
+        padding: 10px;
+        .img {
+          border: solid 1px $base-color;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          border-radius: $round;
+        }
+        img {
+          border-radius: $round;
+          width: 100%;
+          height: 100%;
+        }
+        p {
+          line-height: 1em;
+          width: 95%;
+          margin: 10px auto 0 auto;
+        }
+        .button {
+          position: relative;
+          top: -35px;
+          z-index: 99;
+          .editButton {
+            border: 1px solid $btn-border-color;
+            background: $back-color;
+            font-size: $size-button-small;
+            width: 90%;
+            padding: 5px;
+            border-radius: 4px;
+            margin: 0 auto 0 auto;
+            display: block;
+          }
         }
       }
     }
