@@ -40,6 +40,7 @@
 						<div class="bb-custom-side" >
 							<div class="ehon-text" contentEditable="true">「おつり　おとしちゃった」</div>
 						</div>
+						<div class="ehon_nav_right"></div>
 					</div>
 					<div class="bb-item">
 						<div class="bb-custom-side">
@@ -48,14 +49,18 @@
 						<div class="bb-custom-side">
 							<img src="images/demo4/normal.jpg"/>
 						</div>
+						<div class="ehon_nav_right"></div>
+						<div class="ehon_nav_left"></div>
 					</div>
 					<div class="bb-item">
-						<div class="bb-custom-side">
+						<div class="bb-custom-side" >
 							<div class="ehon-text" contentEditable="true">あれ？<br><br>おつりがない。<br><br>ちゃんとポッケにいれてたのに...<br><br>どこ！？<br>どこにもない！</div>
 						</div>
 						<div class="bb-custom-side">
 							<img src="images/demo4/sippai.jpg"/>
 						</div>></a>
+						<div class="ehon_nav_right"></div>
+						<div class="ehon_nav_left"></div>
 					</div>
 					<div class="bb-item">
 						<div class="bb-custom-side">
@@ -64,6 +69,8 @@
 						<div class="bb-custom-side">
 							<img src="images/demo4/ayamaru.jpg"/>
 						</div></a>
+						<div class="ehon_nav_right"></div>
+						<div class="ehon_nav_left"></div>
 					</div>
 					<div class="bb-item">
 						<div class="bb-custom-side">
@@ -72,6 +79,8 @@
 						<div class="bb-custom-side">
 							<img src="images/demo4/homeru.jpg"/>
 						</div>
+						<div class="ehon_nav_right"></div>
+						<div class="ehon_nav_left"></div>
 					</div>
 				</div>
 
@@ -93,8 +102,9 @@
 
 				var config = {
 						$bookBlock : $( '#bb-bookblock' ),
-						$navNext : $( '#bb-nav-next' ),
-						$navPrev : $( '#bb-nav-prev' ),
+						//$navNext : $( '#bb-nav-next,.ehon_nav_righ' ),
+						$navNext : $( '#bb-nav-next,.ehon_nav_right' ),
+						$navPrev : $( '#bb-nav-prev,.ehon_nav_left' ),
 						$navFirst : $( '#bb-nav-first' ),
 						$navLast : $( '#bb-nav-last' )
 					},
