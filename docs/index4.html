@@ -17,7 +17,7 @@
 
 		<style>
 				.ehon_nav_left {
-					background-color: rgba(100,0,0,0.2);
+					background-color: rgba(100,0,0,0);
 					position: absolute;
 					left: 0;
 					top: 0;
@@ -26,7 +26,7 @@
 				}
 
 				.ehon_nav_right {
-					background-color: rgba(0,100,0,0.2);
+					background-color: rgba(0,100,0,0);
 					position: absolute;
 					left: 50%;
 					top: 0;
@@ -130,13 +130,18 @@
 						$navNext : $( '#bb-nav-next,.ehon_nav_right' ),
 						$navPrev : $( '#bb-nav-prev,.ehon_nav_left' ),
 						$navFirst : $( '#bb-nav-first' ),
-						$navLast : $( '#bb-nav-last' )
+						$navLast : $( '#bb-nav-last' ),
+						$ehon_text : $('.ehon-text')
 					},
 					init = function() {
 						config.$bookBlock.bookblock( {
 							speed : 1000,
 							shadowSides : 0.8,
-							shadowFlip : 0.4
+							shadowFlip : 0.4,
+							onEndFlip : function( fromPage, page ) {
+								 console.log(page + ':' + config.$ehon_text[page].innerHTML);
+								 return false;
+							  },
 						} );
 						initEvents();
 					},
@@ -177,7 +182,7 @@
 							}
 						} );
 
-						// add keyboard events
+/*						// add keyboard events
 						$( document ).keydown( function(e) {
 							var keyCode = e.keyCode || e.which,
 								arrow = {
@@ -196,7 +201,8 @@
 									break;
 							}
 						} );
-					};
+	*/
+				};
 
 					return { init : init };
 
