@@ -10,3 +10,6 @@ gulpがないと言われたら`npm install -g gulp`してください
 `mock/app/`以下がsrcになります。  
 scssは`styles/`以下です  
 main.scssに追記もしくは新規にscssを作成し、main.scssにimportしてください  
+
+# 共有する時
+`cp -R app ../docs/app`しましょう
