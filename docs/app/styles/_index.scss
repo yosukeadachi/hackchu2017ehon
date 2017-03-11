@@ -1,0 +1,33 @@
+header {
+  
+}
+.container {
+  margin: 20px;
+}
+.indexTitle {
+}
+a{
+  &:hover {
+    text-decoration: none;
+    display: block;
+  }
+}
+.indexButton {
+  border: 1px solid #222;
+  border-radius: 4px;
+  margin: 20px;
+  text-align : center;
+  padding: 40px ;
+  a {
+    color: #222;
+    &:hover {
+      text-decoration: none;
+    }
+    &:active {
+      background: #ccc;
+    }
+  }
+  
+}
+//read
+
