@@ -1,16 +1,15 @@
 {
-  "name": "mock",
+  "name": "sample2",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.5",
+    "bootstrap": "~4.0.0-alpha.6",
     "modernizr": "~2.8.1"
   },
   "overrides": {
-    "bootstrap-sass": {
+    "bootstrap": {
       "main": [
-        "assets/stylesheets/_bootstrap.scss",
-        "assets/fonts/bootstrap/*",
-        "assets/javascripts/bootstrap.js"
+        "scss/bootstrap.scss",
+        "dist/js/bootstrap.js"
       ]
     }
   },

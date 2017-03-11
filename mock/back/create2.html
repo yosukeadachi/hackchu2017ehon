@@ -29,36 +29,41 @@
     
     <div class="container">
       <header>
-        <h1>つくった絵本</h1>
+        <h1>絵本をつくる</h1>
       </header>
-      <nav>
-        <a href="./created.html">つくった絵本</a><!-- menu -->
-        <a href="#">menu2</a><!-- menu -->
-      </nav>
-      <button><a href="create.html">新しく絵本をつくる</a></button>
-      <article class="list">
-        <ul>
-          <li>
-            <img src="https://placehold.jp/150x150.png">
-            <p class="date">作成日:2017/03/10</p>
-            <p class="title">おつかいできたよ</p>
-            </div>
-          <li>
-          <li>
-            <img src="https://placehold.jp/150x150.png">
-            <p class="date">作成日:2017/03/10</p>
-            <p class="title">赤ちゃんのはなし</p>
-            </div>
-          <li>
-        </ul>
-      </article>
+      <div class="step">
+        <h2>STEP2</h2>
+        <p>絵本を編集</p>
+      </div>
+      <div class="inputTitle">
+        <h3>
+          絵本のタイトル
+        </h3>
+        <input type="text" value="はじめてのおつかい" />
+      </div>
+        <h3>
+          お話の編集
+        </h3>
+      <ul class="imageList imageList--edit">
+        <li>
+          <img src="https://placehold.jp/150x150.png">
+          <a href="#">編集する</a>
+        </li>
+        <li>
+          <img src="https://placehold.jp/150x150.png">
+          <a href="#">編集する</a>
+        </li>
+      </ul>
+      <div class="createButtons">
+        <button class="button-green">一旦保存</button>
+        <button class="button-red">絵本完成！</button>
+      </div>
     </div>
     
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/tether/dist/js/tether.js"></script>
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
