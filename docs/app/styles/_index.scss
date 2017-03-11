@@ -1,4 +1,7 @@
 $base-color: #555;
+$back-color: #dfdfdf;
+$round: 8px;
+$size-button: 1.1em;
 
 
 *{
@@ -6,7 +9,7 @@ $base-color: #555;
   padding:0;
 }
 header {
-  background: #dfdfdf;
+  background: $back-color;
   width: 100%;
  h1 {
   font-size: 1.0em;
@@ -21,19 +24,23 @@ header {
 .indexTitle {
 }
 a{
+  display: block;
   &:hover {
     text-decoration: none;
     display: block;
   }
+  &:active {
+    background: $back-color;
+  }
 }
 .indexButton {
-  border: 1px solid #222;
-  border-radius: 4px;
+  border: 1px solid $base-color;
+  border-radius: $round;
   margin: 20px;
   text-align : center;
   padding: 40px ;
   a {
-    color: #222;
+    color: $base-color;
     &:hover {
       text-decoration: none;
     }
@@ -65,17 +72,18 @@ ul {
   margin: 0;
   ul {
     overflow: hidden;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     li {
       float: left;
       display: inline-block;
       width: 50%;
       box-sizing: border-box;
       padding-bottom: 5px;
-      padding: 15px;
+      padding: 10px;
       .img {
         border: solid 1px $base-color;
-        border-radius: 6px;
+        border-radius: $round;
       }
       img {
         width: 100%;
@@ -83,8 +91,43 @@ ul {
       p {
         line-height: 1em;
         width: 95%;
-        margin: 5px auto 0 auto;
+        margin: 10px auto 0 auto;
       }
     }
+  }
+}
+button, a {
+  color: $base-color;
+  font-size: $size-button;
+}
+.createTop {
+  background: $back-color;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  a {
+    color: $base-color;
+  }
+
+}
+//create1
+.step {
+  background: $back-color;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  p {
+    font-size: $size-button;
+  }
+}
+.textList {
+  &-title {
+   padding: 10px;
+   border-bottom: 1px solid $base-color;
+   font-weight: bold;
+  }
+  &-text {
+  border-bottom: 1px solid $base-color;
+  padding: 20px 15px;
   }
 }

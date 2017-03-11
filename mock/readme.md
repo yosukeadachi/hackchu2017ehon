@@ -12,4 +12,4 @@ scssは`styles/`以下です
 main.scssに追記もしくは新規にscssを作成し、main.scssにimportしてください  
 
 # 共有する時
-`cp -R app ../docs/app`しましょう
+`sh move.sh`しましょう
