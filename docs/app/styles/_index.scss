@@ -27,6 +27,8 @@ header {
   margin: 0 auto;
 }
 .indexTitle {
+  margin: 30px;
+  text-align: center;
 }
 a{
   display: block;
@@ -43,9 +45,9 @@ a{
   border-radius: $round;
   margin: 20px;
   text-align : center;
-  padding: 40px ;
   a {
     color: $base-color;
+    padding: 40px ;
     &:hover {
       text-decoration: none;
     }
@@ -105,7 +107,7 @@ ul {
       .button {
         position: relative;
         top: -35px;
-        z-index: 9999;
+        z-index: 99;
         .editButton {
           border: 1px solid $btn-border-color;
           background: $back-color;
@@ -125,11 +127,12 @@ button, a {
   font-size: $size-button;
 }
 .createTop {
-  background: $back-color;
-  border: none;
   width: 100%;
-  padding: 15px;
   a {
+    background: $back-color;
+    border: none;
+    width: 100%;
+    padding: 15px;
     color: $base-color;
   }
 
@@ -146,18 +149,21 @@ button, a {
 }
 .textList {
   &-title {
-   padding: 10px;
-   border-bottom: 1px solid $base-color;
-   font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid $base-color;
+    font-weight: bold;
   }
   &-text {
-  border-bottom: 1px solid $base-color;
-  padding: 20px 15px;
+    a {
+      border-bottom: 1px solid $base-color;
+      padding: 20px 15px;
+    }
   }
   .text-action {
     color: $action-color;
     font-weight: bold;
     padding: 10px;
+    border-bottom: 1px solid $base-color;
   }
 }
 .subTitle {
@@ -215,11 +221,14 @@ button, a {
 }
 .modal-icon {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  z-index: 500;
+  bottom: 10px;
+  right: 10px;
   a {
     display: inline-block;
     padding: 10px;
     background: $back-color;
+    box-shadow: 1px 1px 1px #aaa;
+    border-radius: 2px;
   }
 }
