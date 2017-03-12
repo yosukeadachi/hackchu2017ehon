@@ -10,7 +10,7 @@
 }
 .selectArea {
   line-height: 1em;
-  font-size: 0.8em;
+  font-size: 8px;
   border: 1px solid #ddd;
   .select-title {
     background: #ccc;
@@ -20,9 +20,9 @@
   .select {
     background: #333;
     color: #fff;
-    padding: 20px;
+    padding: 15px;
     display: inline-block;
     cursor: pointer;
-    margin-bottom: ;
+    margin-bottom: 10px ;
   }
 }
