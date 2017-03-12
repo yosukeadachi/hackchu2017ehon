@@ -1,0 +1,18 @@
+.select-img {
+  img {
+    width: 50px;
+  }
+}
+.selectImg {
+
+}
+.selectArea {
+  line-height: 1em;
+  .select {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+    cursor: pointer;
+  }
+}
