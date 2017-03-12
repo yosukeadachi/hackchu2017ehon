@@ -1,18 +1,28 @@
 .select-img {
+    width: 50%;
+    float: left;
   img {
-    width: 50px;
+    width: 100%;
   }
 }
 .selectImg {
-
+  
 }
 .selectArea {
   line-height: 1em;
+  font-size: 0.8em;
+  border: 1px solid #ddd;
+  .select-title {
+    background: #ccc;
+    border: 1px solid #555;
+    font-family: sans-serif;
+  }
   .select {
     background: #333;
     color: #fff;
     padding: 20px;
     display: inline-block;
     cursor: pointer;
+    margin-bottom: ;
   }
 }
